@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="view-transition" content="same-origin">
+</head>
+<body class="text-white font-quicksand">
+    
+<section id="first">
+<div id="schedUI" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative p-4 w-full max-w-4xl max-h-full">
+          <div class="relative bg-neutral-900 rounded-lg shadow-md">
+              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200 bg-white">
+                  <h3 class="text-xl font-bold text-black">
+                      Creative Process of Automated Scheduling System
+                  </h3>
+                  <button type="button" class="text-black bg-transparent hover:bg-black hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="schedUI">
+                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                  </button>
+              </div>
+              <div class="p-4 md:p-5 space-y-4">
+                <div class="flex flex-col gap-10 md:flex-row">
+                    <div class="flex flex-col justify-center">
+                        <h1 class="text-xl font-bold">Color Palette and Typography</h1><br>
+                        <p class="text-base text-md leading-relaxed text-white">
+                            I based the color palette and typography on the existing school logo to keep the design consistent and recognizable. The green and yellow tones reflect the emblem’s vibrant and academic spirit, while the Montserrat font complements its clean and modern look.
+                        </p>
+                    </div>
+                    <img src="assets/sched_color.png" alt="Color Palette and Typography" class="w-48 sm:object-cover">
+                </div>
+                <hr>
+                <div id="sched-carousel" class="relative w-full" data-carousel="slide">
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/sched_wireframe.png" class="block w-full h-full object-contain" alt="Wireframe 1">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/Swf1.png" class="block w-full h-full object-contain" alt="Color palette">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/Swf2.png" class="block w-full h-full object-contain" alt="Wireframe 2">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/Swf3.png" class="block w-full h-full object-contain" alt="Wireframe 3">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/Swf4.png" class="block w-full h-full object-contain" alt="Wireframe 4">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/Swf5.png" class="block w-full h-full object-contain" alt="Wireframe 4">
+                        </div>
+                    </div>
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+                <p class="text-center text-md leading-relaxed text-white">
+                  The wireframe was done for the planning and finalizing stage wherein I presented this initial design and was immediately approved. It shows a web-based system that uses an algorithm to assist in the scheduling.
+                </p><hr>
+                <div id="sched-carousel2" class="relative w-full" data-carousel="slide">
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/Sp1.png" class="block w-full h-full object-contain" alt="Color palette">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/Sp2.png" class="block w-full h-full object-contain" alt="Wireframe 2">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/Sp3.png" class="block w-full h-full object-contain" alt="Wireframe 3">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/Sp4.png" class="block w-full h-full object-contain" alt="Wireframe 4">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/Sp5.png" class="block w-full h-full object-contain" alt="Wireframe 4">
+                        </div>
+                    </div>
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+                <p class="text-center text-md leading-relaxed text-white">
+                    The screenshots provided are only some of the final prototype as per the client's consent.
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="second">
+
+</section>
+</body>
+</html>

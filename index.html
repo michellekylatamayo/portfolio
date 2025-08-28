@@ -6,10 +6,11 @@
   <title>Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
   <meta name="view-transition" content="same-origin">
 </head>
-<body class="text-white">
+<body class="text-white font-quicksand">
 
   <div id="header"></div>
 
@@ -21,10 +22,11 @@
         <hr class="flex-grow border-white">
       </div>
     <div class="mt-6 flex flex-wrap justify-center gap-10">
-        <img id="projects" src="assets/ui1.png" class="max-w-xs w-full h-auto rounded-lg shadow-[-8px_8px_0_0_lightgrey] transition-transform duration-300 hover:-translate-y-2">
-        <img id="projects" src="assets/ui2.png" class="max-w-xs w-full h-auto rounded-lg shadow-[-8px_8px_0_0_lightgrey] transition-transform duration-300 hover:-translate-y-2">
-        <img id="projects" src="assets/ui3.png" class="max-w-xs w-full h-auto rounded-lg shadow-[-8px_8px_0_0_lightgrey] transition-transform duration-300 hover:-translate-y-2">
-        <img id="projects" src="assets/ui4.png" class="max-w-xs w-full h-auto rounded-lg shadow-[-8px_8px_0_0_lightgrey] transition-transform duration-300 hover:-translate-y-2">
+        <img id="projects" src="assets/ui1.png" data-modal-target="schedUI" data-modal-toggle="schedUI" class="cursor-pointer max-w-xs w-full h-auto rounded-lg shadow-[-8px_8px_0_0_lightgrey] transition-transform duration-300 hover:-translate-y-2">
+        <img id="projects" src="assets/ui2.png" data-modal-target="musicUI" data-modal-toggle="musicUI" class="cursor-pointer max-w-xs w-full h-auto rounded-lg shadow-[-8px_8px_0_0_lightgrey] transition-transform duration-300 hover:-translate-y-2">
+        <img id="projects" src="assets/ui3.png" data-modal-target="govUI" data-modal-toggle="govUI" class="cursor-pointer max-w-xs w-full h-auto rounded-lg shadow-[-8px_8px_0_0_lightgrey] transition-transform duration-300 hover:-translate-y-2">
+        <img id="projects" src="assets/ui4.png" data-modal-target="donationUI" data-modal-toggle="donationUI" class="cursor-pointer max-w-xs w-full h-auto rounded-lg shadow-[-8px_8px_0_0_lightgrey] transition-transform duration-300 hover:-translate-y-2">
+        
     </div>
     </div>
 
@@ -52,14 +54,28 @@
         <video src="assets/soda.mp4" class="w-[600px] rounded-lg shadow-[-8px_8px_0_lightgrey] object-cover" autoplay loop muted></video>
         <img id="projects" src="assets/miette.png" class="w-[400px] rounded-lg shadow-[-8px_8px_0_lightgrey] object-cover transition-transform duration-300 hover:-translate-y-2">
     </div>
-
-
-
   </section>
+
+
+  
+  <div id="modals-container"></div>
 
   <div id="footer"></div>
 
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
+ <script>
+  fetch('modals.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('modals-container').innerHTML = html;
+
+      // Reinitialize your modal/carousel library here
+      if (typeof initFlowbite === 'function') {
+        initFlowbite();
+      }
+    });
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 </html>
